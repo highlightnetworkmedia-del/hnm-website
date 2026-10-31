@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Highlight Network Media helps businesses build professional brand identities and premium social media presence.">
+<title>Highlight Network Media | Make Your Presence Speak</title>
+<style>
+:root {
+  --blue:#001960;
+  --gold:#C58A24;
+  --white:#FFFFFF;
+  --ink:#101828;
+  --muted:#687386;
+  --light:#F5F7FB;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,90%);margin:auto}
+header{background:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #e9edf3}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:800;color:var(--blue);letter-spacing:-.7px}
+.logo span{display:block;font-size:10px;letter-spacing:4px;color:var(--gold)}
+.navlinks{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:600}
+.navlinks a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--blue);color:white;padding:13px 23px;border-radius:5px;font-weight:700;font-size:14px;transition:.2s}
+.btn:hover{background:#12358a;transform:translateY(-2px)}
+.btn-outline{background:transparent;border:1px solid var(--blue);color:var(--blue)}
+.hero{background:linear-gradient(120deg,#fff 60%,#edf1fa);padding:115px 0 110px}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.08;letter-spacing:-3px;color:var(--blue);max-width:800px;margin:22px 0}
+h1 em{font-style:normal;color:var(--gold)}
+.hero p{max-width:600px;color:var(--muted);font-size:18px;margin-bottom:30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:48px}
+.section-title h2{font-size:clamp(30px,4vw,43px);color:var(--blue);letter-spacing:-1.5px}
+.section-title p{color:var(--muted);margin-top:10px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-panel{background:var(--blue);color:white;padding:42px;border-radius:10px}
+.about-panel h3{font-size:30px;line-height:1.25;margin-bottom:18px}
+.about-panel p{color:#dbe4ff}
+.about-copy p{color:var(--muted);margin:17px 0}
+.services{background:var(--light)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:white;padding:30px 25px;border:1px solid #e7ebf2;border-radius:8px;transition:.2s}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 12px 35px #00196012}
+.service-number{font-size:13px;color:var(--gold);font-weight:800}
+.service-card h3{color:var(--blue);font-size:19px;margin:13px 0 9px}
+.service-card p{color:var(--muted);font-size:14px}
+.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.audience-card{padding:35px;background:#f5f7fb;border-radius:8px}
+.audience-card h3{color:var(--blue);font-size:23px;margin-bottom:12px}
+.audience-card p{color:var(--muted)}
+.process{background:var(--blue);color:white}
+.process .section-title h2{color:white}
+.process .section-title p{color:#c9d5f2}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.process-item{border-top:1px solid #53658f;padding-top:20px}
+.process-item strong{color:#e8bd68;font-size:14px}
+.process-item h3{margin:12px 0}
+.process-item p{color:#c9d5f2;font-size:14px}
+.contact{background:var(--light)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}
+.contact-info h2{font-size:39px;color:var(--blue);line-height:1.2}
+.contact-info p{color:var(--muted);margin:17px 0}
+.contact-form{background:white;padding:30px;border-radius:9px;border:1px solid #e6eaf1}
+.contact-form label{display:block;font-size:13px;font-weight:700;margin:13px 0 5px}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:12px;border:1px solid #dce2eb;border-radius:5px;font:inherit;font-size:14px}
+.contact-form textarea{min-height:110px;resize:vertical}
+.contact-form button{border:0;cursor:pointer;width:100%;margin-top:20px}
+footer{background:#07132f;color:white;padding:38px 0}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer p{color:#bdc8df;font-size:13px}
+footer a{color:#e8bd68}
+.mobile-menu{display:none}
+@media(max-width:760px){
+ .navlinks{display:none}
+ .mobile-menu{display:block}
+ .hero{padding:75px 0}
+ section{padding:65px 0}
+ .about-grid,.contact-grid{grid-template-columns:1fr}
+ .service-grid{grid-template-columns:1fr 1fr}
+ .audience-grid,.process-grid{grid-template-columns:1fr}
+ h1{letter-spacing:-2px}
+}
+@media(max-width:450px){
+ .service-grid{grid-template-columns:1fr}
+ .logo{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="container">
+<a href="#" class="logo">HIGHLIGHT <span>NETWORK MEDIA</span></a>
+<div class="navlinks">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+<a href="#contact" class="btn">Let's Talk</a>
+</div>
+<a class="mobile-menu" href="#contact">Let's Talk →</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container">
+<div class="eyebrow">Branding • Identity • Digital Presence</div>
+<h1>Make Your<br>Presence <em>Speak.</em></h1>
+<p>We help businesses build a professional brand identity and create a stronger, more premium presence that people remember.</p>
+<div class="hero-actions">
+<a href="#contact" class="btn">Start Your Project →</a>
+<a href="#services" class="btn btn-outline">Explore Services</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about-grid">
+<div class="about-panel">
+<div class="eyebrow">Who We Are</div>
+<h3>We turn businesses into brands.</h3>
+<p>Strong branding is more than just a logo. It's the complete experience your customers see, recognize and remember.</p>
+</div>
+<div class="about-copy">
+<div class="eyebrow">About HNM</div>
+<h2 style="font-size:34px;color:#001960">Your business deserves a brand that reflects its value.</h2>
+<p>Highlight Network Media is a branding and social media agency helping new businesses establish a professional identity and helping established businesses create a stronger, more premium brand presence.</p>
+<p>From visual identity to Instagram aesthetics, we bring consistency and clarity to the way your business presents itself.</p>
+<a href="#contact" class="btn">Work With Us →</a>
+</div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+<div class="section-title">
+<div class="eyebrow">What We Do</div>
+<h2>Our Services</h2>
+<p>Everything your brand needs to build a strong identity and presence.</p>
+</div>
+<div class="service-grid">
+<div class="service-card"><span class="service-number">01 / IDENTITY</span><h3>Brand Identity Design</h3><p>Build a consistent and recognizable visual identity for your business.</p></div>
+<div class="service-card"><span class="service-number">02 / DESIGN</span><h3>Logo Design</h3><p>Distinctive logo designs that represent your brand professionally.</p></div>
+<div class="service-card"><span class="service-number">03 / SOCIAL</span><h3>Social Media Management</h3><p>Professional management of your social media presence.</p></div>
+<div class="service-card"><span class="service-number">04 / INSTAGRAM</span><h3>Instagram Page Aesthetic</h3><p>Create a cohesive, polished and premium Instagram feed.</p></div>
+<div class="service-card"><span class="service-number">05 / GOOGLE</span><h3>Google Business Profile</h3><p>Setup and optimization of your business profile on Google.</p></div>
+<div class="service-card"><span class="service-number">06 / COLLATERAL</span><h3>Business Stationery</h3><p>Professional visiting cards, menus, brochures and branded materials.</p></div>
+</div>
+</div>
+</section>
+
+<section id="audience">
+<div class="container">
+<div class="section-title">
+<div class="eyebrow">Who We Help</div>
+<h2>Built for Businesses Ready to Stand Out.</h2>
+</div>
+<div class="audience-grid">
+<div class="audience-card">
+<h3>01. New Businesses</h3>
+<p>Launching a new business? Establish your brand identity and professional presence from day one.</p>
+</div>
+<div class="audience-card">
+<h3>02. Established Businesses</h3>
+<p>Already running a business? Give your brand a more consistent, modern and premium appearance.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="process">
+<div class="container">
+<div class="section-title">
+<div class="eyebrow">How We Work</div>
+<h2>A Clear Process. A Stronger Brand.</h2>
+<p>Every project begins with understanding your business.</p>
+</div>
+<div class="process-grid">
+<div class="process-item"><strong>STEP 01</strong><h3>Understand</h3><p>We learn about your business, goals and branding requirements.</p></div>
+<div class="process-item"><strong>STEP 02</strong><h3>Design</h3><p>We create branding solutions aligned with your business identity.</p></div>
+<div class="process-item"><strong>STEP 03</strong><h3>Deliver</h3><p>We deliver your agreed branding materials and support your next steps.</p></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div class="contact-info">
+<div class="eyebrow">Let's Connect</div>
+<h2>Ready to build a brand that stands out?</h2>
+<p>Tell us about your business and what you need. Let's discuss how we can help strengthen your brand presence.</p>
+<p><strong>Email:</strong><br><a href="mailto:ishighlightnetworkmedia@gmail.com">ishighlightnetworkmedia@gmail.com</a></p>
+<p><strong>WhatsApp:</strong><br>Send us your project enquiry directly.</p>
+</div>
+
+<form class="contact-form" id="leadForm">
+<h3 style="color:#001960;font-size:23px">Start Your Project</h3>
+<label>Your Name *</label>
+<input id="name" required placeholder="Enter your name">
+<label>Business Name *</label>
+<input id="business" required placeholder="Enter your business name">
+<label>Email Address</label>
+<input id="email" type="email" placeholder="Enter your email">
+<label>Service Required *</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>Brand Identity Design</option>
+<option>Logo Design</option>
+<option>Social Media Management</option>
+<option>Instagram Page Aesthetic</option>
+<option>Google Business Profile</option>
+<option>Business Stationery</option>
+<option>Multiple Services</option>
+<option>Other</option>
+</select>
+<label>Tell Us About Your Requirements *</label>
+<textarea id="details" required placeholder="Describe your project..."></textarea>
+<button class="btn" type="submit">Send Enquiry on WhatsApp →</button>
+<p style="font-size:11px;color:#687386;margin-top:10px">Your enquiry will open in WhatsApp for you to send.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-row">
+<div><div class="logo" style="color:white">HIGHLIGHT <span>NETWORK MEDIA</span></div><p>Make Your Presence Speak.</p></div>
+<div><p>© 2026 Highlight Network Media. All rights reserved.</p><p><a href="mailto:ishighlightnetworkmedia@gmail.com">Contact Us</a></p></div>
+</div>
+</footer>
+
+<script>
+document.getElementById("leadForm").addEventListener("submit",function(e){
+ e.preventDefault();
+
+ // Replace with your WhatsApp number including country code.
+ // Example: 919876543210
+ const whatsappNumber = "91XXXXXXXXXX";
+
+ if(whatsappNumber.includes("X")){
+   alert("Please add your WhatsApp number in the website code before publishing.");
+   return;
+ }
+
+ const name=document.getElementById("name").value;
+ const business=document.getElementById("business").value;
+ const email=document.getElementById("email").value;
+ const service=document.getElementById("service").value;
+ const details=document.getElementById("details").value;
+
+ const message=`Hello Highlight Network Media!
+
+I would like to enquire about your services.
+
+Name: ${name}
+Business: ${business}
+Email: ${email}
+Service: ${service}
+Requirements: ${details}`;
+
+ window.open("https://wa.me/"+whatsappNumber+"?text="+encodeURIComponent(message),"_blank");
+});
+</script>
+</body>
+</html>
